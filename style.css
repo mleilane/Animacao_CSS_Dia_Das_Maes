@@ -1,0 +1,44 @@
+body {
+  background: rgb(241, 219, 226);
+  display: flex;
+  justify-content: center;
+}
+
+.coracao img {
+  animation: pulsar 0.8s ease-in-out infinite alternate;
+  filter: drop-shadow(
+    0 0 10px rgba(255, 0, 0, 0.5));
+  margin-left: 12vw;
+  margin-top: 150px;
+  width: 300px;
+}
+
+.feliz-dia-das-maes h1 {
+  font-size: 100px; 
+  text-align: center;
+  color: rgba(193, 4, 4, 0.883);
+  animation: fade 4s infinite; 
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes pulsar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
